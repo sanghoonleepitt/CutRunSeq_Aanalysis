@@ -23,7 +23,8 @@ The lab meeting presentation PPTx and IGV instruction pdf files are stored at\
 
 <!--![](FirstSlide_CutRunSeq.png)-->  
 <!--# Just paste a screenshot here from a clipboard. Then, the address below is generated automatically. -->
-![image](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/56d49039-9369-468e-8ee3-57bb19f0072c)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/8aeb6e49-5922-4c52-9c09-b873a5b8e963)
+
 
 #### CUT&RUN-seq data analysis procedure
 
