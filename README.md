@@ -79,7 +79,7 @@ md5sum is used to verify the integrity of files, as virtually any change to a fi
 You can use this R code or write your own code. After running this code, you will get "MD5Summary_TFAP2bCutRun_Abdalla.txt" output file which summarizes the md5sum measurement and comparison with the md5sum values given by the sequencing core. The output file is already stored at */bgfs/alee/LO_LAB/General/Lab_Data/20231012_LeeCHP5_Abdalla_M134M453_CutRunSeq*
 
 <!-- ![Figure 1. Aligned .bam file from the trimmed .fastq.gz files for Sample 1](Fig1_Summary_md5sum.png) -->
-![Figure 1. Aligned .bam file from the trimmed .fastq.gz files for Sample 1](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/26ba2c2d-4d0a-41dd-b3e2-32df26790353)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/b9038a94-94e2-4e95-a317-76ccccd9d893)
 
 Figure 1. Aligned .bam file from the trimmed .fastq.gz files for Sample 1
 
@@ -95,7 +95,7 @@ Two files you need
 This perl code is to run for loop for each sample fastq files and submit slurm job for Trimmomatic This slurm script is to submit Trimmomatic job. You will get trimmed .fastq.gz files at `../04_TrimmomaticOut_CutRun_4smp`
 
 <!-- ![Figure 2. Aligned .bam file from the trimmed .fastq.gz files for Sample 1](Fig2_TrimmedFastqgzFile.png) -->
-![Figure 2. Aligned .bam file from the trimmed .fastq.gz files for Sample 1](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/8cb41012-6dbb-4c0a-85fa-ac086b953f5a)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/4d35b586-12b0-4c53-a239-3c356e16ce20)
 
 Figure 2. Aligned .bam file from the trimmed .fastq.gz files for Sample 1
 
@@ -113,7 +113,7 @@ This perl code is to run for loop for each sample trimmed fastq files and submit
 The alignment will be stored at an output directory you directed in your perl code, for example, `../05_CutRunTools_Output_4smp/OESTERREICH_1_S1/aligned.aug10/`
 
 <!-- ![Figure 3. Aligned .bam file from the trimmed .fastq.gz files for Sample 1](Fig3_AlignedBamFile.png) -->
-![Figure 3. Aligned .bam file from the trimmed .fastq.gz files for Sample 1](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/a6ec6703-a846-4298-b052-7a387bd18ee9)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/ed00a568-3839-4cb9-90ab-dc98b0b52d58)
 
 Figure 3. Aligned .bam file from the trimmed .fastq.gz files for Sample 1
 
@@ -129,7 +129,7 @@ Two files you need
 When you finish this step, you will get multiple output folders and each folder has sorted or duplicate marking .bam files + bam index (.bai) files. For example, you will get a duplicate-deleted .bam file at `../05_CutRunTools_Output_4smp/OESTERREICH_1_S1/aligned.aug10/dedup/`
 
 <!-- ![Figure 4. Sorted and duplicate read deleted .bam files](Fig4_SortedDupMarkedBAM.png) -->
-![Figure 4. Sorted and duplicate read deleted .bam files](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/10ee9a46-af8d-4176-a52e-6cdc3f6071eb)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/cc7e53e4-7bce-471b-8c17-75fd8938a22d)
 
 Figure 4. Sorted and duplicate read deleted .bam files
 
@@ -145,7 +145,7 @@ Two files you need
 In the Perl file, you can direct output directory. For example, I directed "/bgfs/alee/LO_LAB/Personal/SanghoonLee/H46c_CutRunPeakcallingInstruction/*06_SEACR_v1.3/01a_BedgraphOutput_dupdeleted*" as an output directory. My Perl will make the directories, `"/06_SEACR_v1.3"` and `"/06_SEACR_v1.3/01a_BedgraphOutput_dupdeleted"`, automatically. When you finish this step, you will get .bedgraph output files at the output directory you directed.
 
 <!-- ![Figure 5. .bedgraph files from .bam files](Fig5_Bam2BedGraph.png) -->
-![Figure 5. .bedgraph files from .bam files](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/e7b2102e-5231-4936-aa61-d7e48b641f64)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/4646d7c5-f750-4109-b361-cb0761a0ddf5)
 
 Figure 5. .bedgraph files from .bam files
 
@@ -173,7 +173,7 @@ In the slurm script, **"Slurm_Step6_SEACR_bedgraph2bed.sl"**, it requires ["SEAC
 In the Perl file, you can direct output directory. For example, I directed "/bgfs/alee/LO_LAB/Personal/SanghoonLee/H46b_CutRun_HCC2185_TFAP2b_Abdalla/06_SEACR_v1.3/*02a_SEACROutput_dupdeleted*" as an output directory. My Perl will make the directories, `"/02a_SEACROutput_dupdeleted"`, automatically. When you finish this step, you will get *.bed* output files at the output directory you directed.
 
 <!--  ![Figure 6. SEACR peak calling to get .bed files from .bedgraph](Fig6_SEACROut_BedFile.png)  -->
-![Figure 6. SEACR peak calling to get .bed files from .bedgraph](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/97b3e3f3-e73d-4d2b-9566-70e294481822)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/a0444017-41e6-4d56-a26c-89727aa49328)
 
 Figure 6. SEACR peak calling to get .bed files from .bedgraph
 
@@ -189,7 +189,7 @@ Two files you need
 Once you direct the folder that has SEACR .bed files, the slurm script will 1) conver .bed to .bedgraph, 2) sort the .bedgraph, and 3) convert .bedgraph to .bigwig file. This .bigwig file is used as an input file for IGV.
 
 <!-- ![Figure 7. Making .bigwig file from SEACR output](Fig7_MakeBigWigFromSEACRout.png)  -->
-![Figure 7. Making .bigwig file from SEACR output](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/bd3eb9e4-f985-494c-9e5e-849fb279bcac)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/d876d63e-8a2c-4186-a814-5be1edb4ae79)
 
 Figure 7. Making .bigwig file from SEACR output
 
@@ -198,7 +198,7 @@ Figure 7. Making .bigwig file from SEACR output
 How to use IGV: refer to "Instruction_HowToUseIGV_v1.0_20240130.pdf" at Pitt OneDrive,\
 */A.V. Lee Lab/Lee-Oesterreich Lab/Lee-Oesterreich General Lab Items/Bioinformatics_Basics_And_Scripts/10_CutRunSeq*
 
-![Figure 8. IGV screenshot, after group autoscaling](https://github.com/leeoesterreich/CutAndRunSeqAnalysis/assets/87338488/d246f965-3fa7-4873-8ccd-a6244445b8d4)
+![image](https://github.com/sanghoonleepitt/CutRunSeq_Aanalysis/assets/106251438/fa2cf684-9c0b-440a-b785-644bee0a5f59)
 
 Figure 8. IGV screenshot, after group autoscaling
 
